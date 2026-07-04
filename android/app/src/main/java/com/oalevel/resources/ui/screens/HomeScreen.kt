@@ -413,7 +413,7 @@ private fun RecentResourceItem(resource: ResourceItem, onClick: () -> Unit) {
     )
 }
 
-fun formatSize(bytes: Long): String {
+private fun formatSize(bytes: Long): String {
     return when {
         bytes < 1024 -> "$bytes B"
         bytes < 1024 * 1024 -> "${bytes / 1024} KB"
