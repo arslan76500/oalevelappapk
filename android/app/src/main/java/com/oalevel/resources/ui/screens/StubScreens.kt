@@ -148,7 +148,7 @@ fun FavouritesScreen(
                         },
                         trailingContent = {
                             IconButton(onClick = { viewModel.remove(fav.resourceId) }) {
-                                Icon(Icons.Filled.FavoriteOutlined, null,
+                                Icon(Icons.Outlined.FavoriteBorder, null,
                                     tint = MaterialTheme.colorScheme.error)
                             }
                         },
