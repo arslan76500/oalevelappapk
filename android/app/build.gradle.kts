@@ -116,7 +116,7 @@ dependencies {
     implementation(libs.accompanist.permissions)
 
     // PDF Viewer
-    implementation(libs.pdf.viewer)
+    
 
     debugImplementation(libs.androidx.ui.tooling)
 }
