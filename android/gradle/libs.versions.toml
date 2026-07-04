@@ -15,12 +15,12 @@ datastore = "1.1.1"
 workmanager = "2.9.0"
 pdfRenderer = "1.0.0"
 coil = "2.7.0"
-kotlinxSerialization = "1.7.1"
+kotlinxSerialization = "1.6.3"
 coroutines = "1.8.1"
 splashscreen = "1.0.1"
 material3 = "1.2.1"
 accompanist = "0.34.0"
-pdfViewer = "2.0.1"
+pdfViewer = "3.2.0-beta.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -55,7 +55,7 @@ kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-
 kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
 splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "splashscreen" }
 accompanist-permissions = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanist" }
-pdf-viewer = { group = "com.github.afreakyelf", name = "Pdf-Viewer", version.ref = "pdfViewer" }
+pdf-viewer = { group = "com.github.barteksc", name = "AndroidPdfViewer", version.ref = "pdfViewer" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
