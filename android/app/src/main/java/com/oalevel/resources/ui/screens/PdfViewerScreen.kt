@@ -136,7 +136,7 @@ fun PdfViewerScreen(
                     }
                     IconButton(onClick = viewModel::toggleFavourite) {
                         Icon(
-                            if (uiState.isFavourite) Icons.Filled.Favorite else Icons.Filled.FavoriteBorder,
+                            if (uiState.isFavourite) Icons.Filled.Favorite else Icons.Outlined.FavoriteBorder,
                             "Favourite",
                             tint = if (uiState.isFavourite) MaterialTheme.colorScheme.error
                                    else MaterialTheme.colorScheme.onSurface
@@ -308,6 +308,5 @@ private fun PdfErrorState(error: String, onRetry: () -> Unit) {
         Spacer(Modifier.height(8.dp))
         Text(error, color = MaterialTheme.colorScheme.error)
         Spacer(Modifier.height(16.dp))
-        if (onRetry != {}) Button(onClick = onRetry) { Text("Retry") }
-    }
+Button(onClick = onRetry) { Text("Retry") }    }
 }
